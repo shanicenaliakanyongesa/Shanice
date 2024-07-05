@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload</title>
+    <link rel="stylesheet" href="../static/files/css/bootstrap.css">
+</head>
+<body>
+    <div class="container-fluid">
+        {% include 'navbar.html'%}
+        <br>
+        <section class="row">   
+            <div class="col-md-6 ms-5">
+                <div class="card shadow p-2">
+                    <form action='/upload' method="POST" enctype="multipart/form-data">
+                        <label for="">Product Name</label>
+                        <input type="text" name="product_name" id="" class="form-control" required>
+                        <label for="">Product Description</label>
+                        <textarea name="product_desc" id="" cols="30" rows="3" class="form-control" required></textarea>
+                        <label for="">Product Cost</label>
+                        <input type="number" name="product_cost" id="" class="form-control" required>
+                        <label for="">Product Category</label>
+                        <select name="product_category" id="" class="form-control">
+                            <option value="Electronics">Electronics</option>
+                            <option value="Clothes">Clothes</option>
+                            <option value="Utensils">Utensils</option>
+                            <option value="Smartphones">Smartphones</option>
+                            <option value="Other">Other</option>
+                        </select><br>
+                        <label for="">Product Image</label>
+                        <input type="file" name="product_image_name" id="" class="form-control" required><br>
+                        in
+
+
+
+
+
+
+
+
+
+
+
+                    </form>
+
+
+                </div>
+
+            </div>                   
+
+            
+        </section>
+
+
+    </div>
+    
+</body>
+</html>

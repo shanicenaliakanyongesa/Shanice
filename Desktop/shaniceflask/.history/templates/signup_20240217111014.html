@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+   <!--linking our css for styling-->
+<link rel="stylesheet" href="../static/files/css/bootstrap.min.css">
+<link rel="stylesheet" href="../static/files/css/lightslider.css">
+<link rel="stylesheet" href="../static/files/css/style.css">
+<!--link js to add interactivity and functionality-->
+<script src="../static/files/js/bootstrap.bundle.min.js"></script>
+<script src="../static/files/js/jquery.js"></script>
+<script src="../static/files/js/lightslider.js"></script>
+<script src="../static/files/js/script.js"></script>
+<div class="container-fluid">
+    {% include 'navbar.html' %}
+    <section class="row">
+        <div class="col-md-6 ms-5">
+            <div class="card shadow p-2">
+                
+                <h5> {{ message }}</h5>
+                <form action="/signup" method="post">
+                    <div class="container">
+                        <section class="row">
+                            <div class="col-md-4">
+                                 <h3>Create Account</h3>
+
+                                 <form action="/signup" method="post">
+                                     <input type="text" name="username" placeholder="Your Username"
+                                     class="form-control"> <br>
+                                     <input type="email" name="email" placeholder="Your Email"
+                                     class="form-control"> <br>
+                                     <input type="tel" name="phone" placeholder="Your Phone"
+                                     class="form-control"> <br>
+                                     <input type="password" name="password1" placeholder="Your Password"
+                                     class="form-control"> <br>
+                                     <input type="password" name="password2" placeholder="Confirm Password"
+                                     class="form-control"> <br><br>
+                                     <input type="tel" name="phone" id="" class="form-control" placeholder="phone"><br><br>
+                                     <input type="submit" value="Sign Up" class="btn btn-info"><br><br>
+                                   
+                                 </form>
+                                <br>
+                                <a href="/signin"> Already Have an Account?, Login </a>
+                            </div>
+                        </section>
+                    </div>  
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            </form>
+            </div>
+        </div>
+    </section>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>
